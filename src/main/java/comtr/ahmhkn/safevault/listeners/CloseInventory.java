@@ -13,6 +13,8 @@ public class CloseInventory implements Listener {
         if (e.getPlayer() instanceof Player) {
             if (Vaults.vaultInventories.contains(e.getInventory())) {
                 Vaults.saveVault(e.getPlayer().getName(), e.getInventory(), Vaults.openedVaults.get((Player) e.getPlayer()));
+                Vaults.vaultInventories.remove(e.getInventory());
+                Vaults.openedVaults.remove((Player)e.getPlayer());
             }
         }
     }
