@@ -1,0 +1,13 @@
+name: SafeVault
+version: '${project.version}'
+main: comtr.ahmhkn.safevault.Main
+authors: [ AhmHkn ]
+description: Virtual Chest plugin
+website: https://ahmhkn.com.tr
+
+
+commands:
+  safevault:
+    description: Main command.
+    aliases:
+      - sv
